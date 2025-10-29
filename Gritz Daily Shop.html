@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gritz Daily Shop</title>
+  <style>
+   
+    body {
+      background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+   
+    header {
+      text-align: center;
+      background: linear-gradient(to right, #81c784, #66bb6a);
+      padding: 40px 20px;
+      border-bottom: 3px solid #4caf50;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 750px;
+      margin: 30px auto;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 0;
+      border-bottom: 2px solid #a5d6a7;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 15px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .hours {
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #2e7d32;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -3px;
+      background-color: #2e7d32;
+      transition: width 0.3s;
+    }
+
+    a:hover {
+      color: #1b5e20;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+
+    .socials a {
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      background: linear-gradient(to right, #66bb6a, #81c784);
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer span {
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gritz Daily Shop</h1>
+    <p>668 Binondo, Manila</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Products</h2>
+      <ul>
+        <li>☕ Coffee</li>
+        <li>🍜 Instant Dishes</li>
+        <li>🥤 Drinks</li>
+        <li>🍪 Snacks</li>
+      </ul>
+    </section>
+
+    <section class="hours">
+      <h2>🕒 Store Hours</h2>
+      <p>Monday – Saturday: <strong>6:00 AM – 5:00 PM</strong></p>
+      <p>Sunday: <strong>Closed</strong></p>
+    </section>
+
+    <section>
+      <h2>Location</h2>
+      <p>📍 Just by the entrance of Juan Luna Mall</p>
+      <img src="https://www.flickr.com/photos/94890199@N08/10619531633/player/1aac269801" alt="Juan Luna Mall Entrance">
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>📞 0997 649 4765</p>
+      <p>📧 <a href="mailto:jamangallbsales@gmail.com">jamangallbsales@gmail.com</a></p>
+    </section>
+
+    <section class="socials">
+      <h2>Follow Us</h2>
+      <p>
+        🌐 <a href="#">Facebook</a> |
+        📸 <a href="#">Instagram</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Gritz Daily Shop</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
